@@ -1,0 +1,36 @@
+discovery:
+  search_terms:
+    - artificial intelligence
+    - machine learning
+    - generative ai
+    - llm
+  max_channels_per_term: 10
+  min_subscribers: 100000
+
+videos:
+  lookback_hours: 30
+  max_videos_total: 40
+
+summarization:
+  model: gpt-4.1-mini
+  max_items_in_digest: 10
+  min_relevance_score: 0.35
+
+audio:
+  model: gpt-4o-mini-tts
+  voice: alloy
+  format: mp3
+
+rss:
+  title: AI Daily Summary (Private)
+  description: Daily private AI video brief
+  feed_url: https://example.com/private_feed.xml
+  site_url: https://example.com
+  private_token: change-me-token
+  output_file: output/private_feed.xml
+  enclosure_base_url: https://example.com/audio
+
+storage:
+  output_dir: output
+  s3_bucket: ""
+  s3_prefix: ai-daily-summary
